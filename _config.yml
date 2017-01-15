@@ -5,5 +5,13 @@ defaults:
     -
         scope:
             path: "" # an empty string here means all files in the project
+            type: "posts" #  Will only set the layout for files where the type is posts
         values:
             layout: "default"
+    -
+        scope:
+            path: "projects"
+            type: "pages"
+        values:
+            layout: "project" # overrides previous default layout
+            author: "Kanyon Edvall"
